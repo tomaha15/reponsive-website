@@ -96,6 +96,11 @@ section .content {
     
 
 }
+
+section .content p {
+    /* transition: opacity 2s ease; */
+}
+
 .content.active{
     opacity: 1;
 }
@@ -189,6 +194,15 @@ aside a{
     padding: 8px 0;
     font-size: 14px;
     font-weight: 500;
+}
+
+aside a:hover{
+    border-bottom: solid 1px black;
+
+}
+
+aside div:last-child:hover{
+    color: #0077b5;
 }
 
 aside button.close{
