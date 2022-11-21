@@ -14,6 +14,10 @@ html {
     scroll-behavior: smooth;
 }
 
+/* p {
+    color: white;
+} */
+
 .desktop{
     display: none;
 }
@@ -67,7 +71,7 @@ section {
 }
 
 #one{
-    background-position-y: 35%;
+    background-position-y: 25%;
 }
 #three{
     background-position-x:8%;
@@ -89,6 +93,8 @@ section .content {
     padding-bottom: 20vh;
     display: grid;
     grid-template-rows: min-content auto min-content;
+    
+
 }
 .content.active{
     opacity: 1;
@@ -143,6 +149,7 @@ section .buttons{
     }
     #three{
         background-position-x: 12%;
+        /* background-position-y: 90%; */
     }
     #four{
         background-position-x: 76%;
@@ -156,6 +163,8 @@ section .buttons{
         background-position-x: 80%;
 
     }
+
+
 }
 
 aside{
