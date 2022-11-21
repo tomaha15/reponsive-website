@@ -66,23 +66,23 @@ section {
     background-position: center center;
 }
 
-section.one{
+#one{
     background-position-y: 35%;
 }
-section.three{
+#three{
     background-position-x:8%;
     background-position-y: 15;
 }
-section.four{
+#four{
     background-position-y: 10%;
 }
 
 section .content {
-    /* opacity: 0; */
+    opacity: 0;
     /* position: fixed; */
     width: 100%;
     /* top:0; */
-    /* transition: opacity .3s ease; */
+    transition: opacity .6s ease;
     height: 100vh;
     text-align: center;
     padding-top: 20vh;
@@ -90,9 +90,9 @@ section .content {
     display: grid;
     grid-template-rows: min-content auto min-content;
 }
-/* section.active .content{
+.content.active{
     opacity: 1;
-} */
+}
 
 section h1{
     font-size: 2rem;
@@ -135,24 +135,24 @@ section .buttons{
 }
 
 @media (max-width:768px){
-    section.one {
+    #one {
         background-position-x: 75%;
     }
-    section.two{
+    #two{
         background-position-x: 62%;
     }
-    section.three{
+    #three{
         background-position-x: 12%;
     }
-    section.four{
+    #four{
         background-position-x: 76%;
 
     }
-    section.five{
+    #five{
         background-position-x: 37%;
 
     }
-    section.six{
+    #six{
         background-position-x: 80%;
 
     }
@@ -218,7 +218,25 @@ main {
   section {
     position: relative;
     scroll-snap-align: center;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     min-height: 100vh;
+
   }
+
+  
+    /* .content > * {
+      opacity: 0;
+      transform: translate3d(0, 4rem, 0);
+      transition: opacity 800ms var(--delay),
+        transform 800ms cubic-bezier(0.13, 0.07, 0.26, 0.99) var(--delay);
+    } */
+  
+  
+  /* .is-visible .content {
+    opacity: 1;
+    transform: translate3d(0, 1rem, 0);
+  } */
+  /* .is-visible .section__img {
+    opacity: 0.75;
+  } */
