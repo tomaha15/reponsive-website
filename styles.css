@@ -149,12 +149,17 @@ section .buttons{
 
 aside{
     position: fixed;
+    transition: right .4s ease;
     right: -320px;
     width: 320px;
     background-color: #fff;
     padding: 50px 40px;
     z-index: 4;
     height: 100vh;
+}
+
+aside.active{
+    right:0
 }
 
 aside a{
@@ -176,7 +181,7 @@ aside button.close{
     padding: 10px;
     font-family: sans-serif;
     font-weight: 100;
-
+    cursor: pointer;
 
 }
 
@@ -186,4 +191,8 @@ aside button.close{
     inset: 0;
     background-color: rgb(0, 0, 0,.35);
     backdrop-filter: blur(3px);
+}
+
+.backdrop.active{
+    display:block;
 }
